@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/personal/address/index",
+    "pages/publish/publish",
+    "pages/task/task",
+    "pages/personal/personal",
+    "pages/personal/feedback/index",
+    "pages/personal/publishTask/index",
+    "pages/personal/receiveTask/index",
+    "pages/personal/setting/setting",
+    "pages/personal/setting/personSetting",
+    "pages/personal/address/add",
+    "pages/personal/address/edit",
+    "pages/personal/setting/editPhone",
+    "pages/personal/setting/newPhone",
+    "pages/personal/setting/succeedEdit"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#f55e14",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "iconWidth": "15px",
+    "spacing": "4px",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/tabBar/home.png",
+        "selectedIconPath": "static/tabBar/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "static/tabBar/publish.png",
+        "selectedIconPath": "static/tabBar/publish.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "static/tabBar/personal.png",
+        "selectedIconPath": "static/tabBar/personal_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap9.json"
+}

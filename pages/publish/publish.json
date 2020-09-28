@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "发布任务",
+  "usingComponents": {
+    "u-form": "/uview-ui/components/u-form/u-form",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/uview-ui/components/u-input/u-input",
+    "u-upload": "/uview-ui/components/u-upload/u-upload",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-switch": "/uview-ui/components/u-switch/u-switch",
+    "u-select": "/uview-ui/components/u-select/u-select",
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "u-modal": "/uview-ui/components/u-modal/u-modal"
+  }
+}

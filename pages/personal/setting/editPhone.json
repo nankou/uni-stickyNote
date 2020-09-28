@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "账号与安全",
+  "usingComponents": {
+    "u-message-input": "/uview-ui/components/u-message-input/u-message-input",
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-verification-code": "/uview-ui/components/u-verification-code/u-verification-code"
+  }
+}

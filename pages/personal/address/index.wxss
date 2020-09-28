@@ -1,0 +1,5 @@
+
+.address_item{
+	box-shadow: rgba(210, 122, 62, 0.1) 2px 2px 2px 2px ;
+}
+
