@@ -107,9 +107,11 @@
   border: none;
 }
 .u-box.data-v-0e1e7f9a {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2rpx solid #cccccc;
-  border-radius: 6rpx;
+  -webkit-border-radius: 6rpx;
+          border-radius: 6rpx;
 }
 .u-box-active.data-v-0e1e7f9a {
   overflow: hidden;
@@ -156,7 +158,8 @@
   background: #000000;
   width: 80%;
   position: absolute;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -170,7 +173,8 @@
   background: #000000;
   width: 80%;
   position: absolute;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%);

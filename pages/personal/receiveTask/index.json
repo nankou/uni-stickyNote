@@ -2,6 +2,7 @@
   "navigationBarTitleText": "我领取的任务",
   "usingComponents": {
     "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "sib-list": "/components/sib-list/sib-list",
     "u-row": "/uview-ui/components/u-row/u-row",
     "u-col": "/uview-ui/components/u-col/u-col"
   }

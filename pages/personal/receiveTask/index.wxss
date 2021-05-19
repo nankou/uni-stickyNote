@@ -29,6 +29,7 @@
   background-color: #f7f7f7;
 }
 .container .task_item {
-  box-shadow: rgba(210, 122, 62, 0.1) 2px 2px 2px 2px;
+  -webkit-box-shadow: rgba(210, 122, 62, 0.1) 2px 2px 2px 2px;
+          box-shadow: rgba(210, 122, 62, 0.1) 2px 2px 2px 2px;
 }
 

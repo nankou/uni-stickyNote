@@ -92,21 +92,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components = {
-  uSearch: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-search/u-search */ "uview-ui/components/u-search/u-search").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-search/u-search.vue */ 158))
-  },
-  uSwiper: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-swiper/u-swiper */ "uview-ui/components/u-swiper/u-swiper").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-swiper/u-swiper.vue */ 165))
-  },
-  uTabs: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tabs/u-tabs.vue */ 172))
-  },
-  uRow: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-row/u-row */ "uview-ui/components/u-row/u-row").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-row/u-row.vue */ 179))
-  },
-  uCol: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-col/u-col */ "uview-ui/components/u-col/u-col").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-col/u-col.vue */ 186))
+var components
+try {
+  components = {
+    uSearch: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-search/u-search */ "uview-ui/components/u-search/u-search").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-search/u-search.vue */ 158))
+    },
+    uTabs: function() {
+      return Promise.all(/*! import() | uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-tabs/u-tabs.vue */ 172))
+    },
+    uRow: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-row/u-row */ "uview-ui/components/u-row/u-row").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-row/u-row.vue */ 186))
+    },
+    uCol: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-col/u-col */ "uview-ui/components/u-col/u-col").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-col/u-col.vue */ 193))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
   }
 }
 var render = function() {
@@ -147,6 +163,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
 
 
 
@@ -255,20 +275,55 @@ var _wxapi = _interopRequireDefault(__webpack_require__(/*! ../../store/wxapi/wx
 //
 //
 //
-var uniSearchBar = function uniSearchBar() {__webpack_require__.e(/*! require.ensure | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-search-bar/uni-search-bar.vue */ 193));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { uniSearchBar: uniSearchBar }, data: function data() {return { API_BASE_URL: 'http://112.74.86.165:8080', indicatorDots: true, swiperCurrent: 0, swiperLength: 0, goodsList: [], searchText: '', limitList: [{ time: '16:00', isIn: true, limitImg: '../../static/poduct3.jpg', limitText: '河源现摘草莓125g/盒', price: '32', toBuy: true }, { time: '18:00', isIn: false, limitImg: '../../static/poduct2.jpg', limitText: '甜点营销活动策划', price: '29', toBuy: true }, { time: '20:00', isIn: false, limitImg: '../../static/poduct3.jpg', limitText: '水果店促销', price: '32', toBuy: true }, { time: '22:00', isIn: false, limitImg: '../../static/poduct2.jpg', limitText: '潮汕新鲜牛肉丸', price: '60', toBuy: true }], carouselList: [{ id: 1, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 2, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 3, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 4, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }], active: 0, tabList: [{ name: '全部' }, { name: '代拿快递' }, { name: '跑腿' }, { name: '代充电费' }], current: 0 };}, onLoad: function onLoad() {// this.getcarouselList()
-  }, filters: { formatUrl: function formatUrl(value) {return value.replace(/\\/g, "/");} }, methods: { changeIndicatorDots: function changeIndicatorDots(e) {this.indicatorDots = !this.indicatorDots;}, changeAutoplay: function changeAutoplay(e) {this.autoplay = !this.autoplay;},
-    intervalChange: function intervalChange(e) {
-      this.interval = e.target.value;
+//
+//
+//
+//
+var uniSearchBar = function uniSearchBar() {__webpack_require__.e(/*! require.ensure | components/uni-search-bar/uni-search-bar */ "components/uni-search-bar/uni-search-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-search-bar/uni-search-bar.vue */ 200));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var sibList = function sibList() {__webpack_require__.e(/*! require.ensure | components/sib-list/sib-list */ "components/sib-list/sib-list").then((function () {return resolve(__webpack_require__(/*! @/components/sib-list/sib-list.vue */ 179));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { uniSearchBar: uniSearchBar, sibList: sibList }, data: function data() {return { API_BASE_URL: 'http://112.74.86.165:8080', indicatorDots: true, swiperCurrent: 0, swiperLength: 0, goodsList: [], searchText: '', limitList: [{ time: '16:00', isIn: true, limitImg: '../../static/poduct3.jpg', limitText: '河源现摘草莓125g/盒', price: '32', toBuy: true }, { time: '18:00', isIn: false, limitImg: '../../static/poduct2.jpg', limitText: '甜点营销活动策划', price: '29', toBuy: true }, { time: '20:00', isIn: false, limitImg: '../../static/poduct3.jpg', limitText: '水果店促销', price: '32', toBuy: true }, { time: '22:00', isIn: false, limitImg: '../../static/poduct2.jpg', limitText: '潮汕新鲜牛肉丸', price: '60', toBuy: true }], carouselList: [{ id: 1, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 2, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 3, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }, { id: 4, image: 'http://112.74.86.165:8080/uploadFile/2020/09/02/22189a38-35ff-447d-9b05-535ed2ccfa27.png' }], active: 0, tabList: [{ name: '全部' }, { name: '代拿快递' }, { name: '跑腿' }, { name: '代充电费' }], current: 0 };}, onLoad: function onLoad() {// this.getcarouselList()
+  }, filters: { formatUrl: function formatUrl(value) {return value.replace(/\\/g, "/");} }, methods: { // 上拉 下拉刷新
+    // 刷新touch监听
+    touchstart: function touchstart(e) {this.$refs.sibList.refreshStart(e);}, touchmove: function touchmove(e) {this.$refs.sibList.refreshMove(e);}, touchend: function touchend(e) {this.$refs.sibList.refreshEnd(e);},
+    // 下拉刷新函数
+    isRefresh: function isRefresh() {var _this2 = this;
+      var _this = this;
+      setTimeout(function () {
+        uni.showToast({
+          icon: 'success',
+          title: '刷新成功' });
+
+        var defaultData = [
+        '初始数据1', '初始数据2', '初始数据3', '初始数据4',
+        '初始数据5', '初始数据6'];
+
+        _this.list = defaultData;
+        // 刷新结束调用
+        _this2.$refs.sibList.endAfter();
+      }, 1000);
     },
-    durationChange: function durationChange(e) {
-      this.duration = e.target.value;
+    // 滚动触底函数
+    scrolltolowerFn: function scrolltolowerFn() {
+      uni.showLoading({
+        title: '加载中...',
+        mask: true });
+
+      // 模拟请求
+      var _this = this;
+      setTimeout(function () {
+        // 请求成功
+        var newData = [
+        '新数据1', '新数据2', '新数据3', '新数据4'];
+
+        _this.list = _this.list.concat(newData);
+        console.log(_this.list);
+        uni.hideLoading();
+      }, 1000);
     },
     // 获取轮播图
-    getcarouselList: function getcarouselList() {var _this = this;
+    getcarouselList: function getcarouselList() {var _this3 = this;
       var data = { type: 1 };
       _wxapi.default.getcarouselList(data).then(function (res) {
-        _this.carouselList = res.resultParam.pictureList;
-        _this.swiperLength = _this.carouselList.length;
+        _this3.carouselList = res.resultParam.pictureList;
+        _this3.swiperLength = _this3.carouselList.length;
       });
     },
     // 顶部搜索栏

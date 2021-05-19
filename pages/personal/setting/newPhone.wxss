@@ -51,7 +51,8 @@
 .container button {
   width: 280rpx;
   height: 80rpx;
-  border-radius: 40rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
   background-color: #f97f26;
   color: #FFFFFF;
   font-size: 30rpx;
@@ -69,7 +70,8 @@
   width: 622rpx;
   height: 80rpx;
   background-color: #f97f26;
-  border-radius: 40rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
   color: #FFFFFF;
   font-size: 30rpx;
 }

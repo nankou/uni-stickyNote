@@ -92,15 +92,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components = {
-  uMessageInput: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-message-input/u-message-input */ "uview-ui/components/u-message-input/u-message-input").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-message-input/u-message-input.vue */ 295))
-  },
-  uToast: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-toast/u-toast */ "uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-toast/u-toast.vue */ 302))
-  },
-  uVerificationCode: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-verification-code/u-verification-code */ "uview-ui/components/u-verification-code/u-verification-code").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-verification-code/u-verification-code.vue */ 309))
+var components
+try {
+  components = {
+    uMessageInput: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-message-input/u-message-input */ "uview-ui/components/u-message-input/u-message-input").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-message-input/u-message-input.vue */ 302))
+    },
+    uToast: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-toast/u-toast */ "uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-toast/u-toast.vue */ 309))
+    },
+    uVerificationCode: function() {
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-verification-code/u-verification-code */ "uview-ui/components/u-verification-code/u-verification-code").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-verification-code/u-verification-code.vue */ 316))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
   }
 }
 var render = function() {

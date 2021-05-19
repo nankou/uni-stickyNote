@@ -59,9 +59,11 @@
   z-index: 99;
   width: 700rpx;
   height: 330rpx;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   background-color: #fffcfa;
-  box-shadow: rgba(230, 77, 3, 0.1) 0px 8px 8px 2px;
+  -webkit-box-shadow: rgba(230, 77, 3, 0.1) 0px 8px 8px 2px;
+          box-shadow: rgba(230, 77, 3, 0.1) 0px 8px 8px 2px;
 }
 .user-option {
   margin-top: 40%;

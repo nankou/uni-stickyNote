@@ -5,6 +5,7 @@
 	padding-top: 3%;
 }
 .input{
-	box-shadow: rgba(210,73,7,0.1) 0px 2px 2px 2px ;
+	-webkit-box-shadow: rgba(210,73,7,0.1) 0px 2px 2px 2px ;
+	        box-shadow: rgba(210,73,7,0.1) 0px 2px 2px 2px ;
 }
 
